@@ -11,7 +11,7 @@ export default function Recipes() {
       }
       let data = await res.json();
       SetAllRecipes(data.recipes);
-    //   console.log(data.recipes);
+      console.log(data.recipes);
     }
 
     getAllRecipes();

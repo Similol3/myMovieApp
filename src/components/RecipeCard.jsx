@@ -4,7 +4,7 @@ export default function RecipeCard({data}) {
     console.log(data)
 
   return (
-    <div className="w-[80%] mx-auto shadow-2xl rounded-xl overflow-hidden">
+    <div className="w-[90%] mx-auto shadow-2sm rounded-xl overflow-hidden">
       <div className="w-full h-[300px] ">
         <img
           src={data.image}

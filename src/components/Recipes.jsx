@@ -19,8 +19,8 @@ export default function Recipes() {
 
   return (
     <div className="flex flex-col gap-10 ">
-      {allRecipes.map((item, index) => (
-        <RecipeCard />
+      {allRecipes.map((item) => (
+        <RecipeCard data={item} key={item.id}/>
       ))}
     </div>
   );

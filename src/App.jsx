@@ -1,14 +1,16 @@
 import Header from "./components/Header";
 import Searchbar from "./components/Search";
 import RecipeCard from "./components/RecipeCard";
-  function App() {
+import Recipes from "./components/Recipes"
+
+function App() {
   return (
     <div>
       <Header />
       <Searchbar />
-      <RecipeCard/>
+      <Recipes />
     </div>
-    );
+  );
 }
 
 export default App;

@@ -1,19 +1,14 @@
-import { useState } from "react";
-import Header from "./components/header";
-import Searchbar from "./components/search";
-// import Card from "./components/card";
-
-
-function App() {
-
+import Header from "./components/Header";
+import Searchbar from "./components/Search";
+import RecipeCard from "./components/RecipeCard";
+  function App() {
   return (
     <div>
       <Header />
-      <Searchbar />  
-      {/* <Card />   */}
+      <Searchbar />
+      <RecipeCard/>
     </div>
-  );
-
+    );
 }
 
 export default App;

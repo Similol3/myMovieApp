@@ -13,8 +13,8 @@ export default function RecipeCard({data}) {
         />
       </div>
       <div className="p-6">
-        <h2 className="">{data.name}</h2>
-        <span>{data.rating}</span>
+        <h2 className="font-semibold text-2xl mb-2">{data.name}</h2>
+        <span className="border w-fit px-2 py-0.5 bg-red-400 text-white rounded">{data.rating}</span>
       </div>
     </div>
   );

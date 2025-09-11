@@ -20,7 +20,7 @@ export default function Recipes() {
   return (
     <div className="flex flex-col gap-10 ">
       {allRecipes.map((item) => (
-        <RecipeCard data={item} key={item.id}/>
+        <RecipeCard data={item} key={item.id} />
       ))}
     </div>
   );

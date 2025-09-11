@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import RecipeCard from "./RecipeCard";
 
 export default function Recipes() {
-  const [allRecipes, SetAllRecipes] = useState([]);
+  const [allRecipes, setAllRecipes] = useState([]);
   useEffect(() => {
     async function getAllRecipes() {
       let res = await fetch("https://dummyjson.com/recipes");
@@ -10,7 +10,7 @@ export default function Recipes() {
         throw new Error("Problem fetching Recipes");
       }
       let data = await res.json();
-      SetAllRecipes(data.recipes);
+      setAllRecipes(data.recipes);
       console.log(data.recipes);
     }
 

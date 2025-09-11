@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router";
 
 export default function RecipeCard({ data }) {
   console.log(data);
@@ -24,6 +24,7 @@ export default function RecipeCard({ data }) {
           {data.rating}
         </span>
         </div>
+        <Link to={`/${data.id}`} className="cursor-pointer">Read More</Link>
       </div>
       </div>
     </div>

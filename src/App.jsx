@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Searchbar from "./components/Search";
 import Recipes from "./components/Recipes";
 import { BrowserRouter, Route, Routes } from "react-router";
+import RecipeDetails from "./components/RecipeDetails";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             </div>
           }
         />
+        <Route path="/:id" element={<RecipeDetails/>}/>
       </Routes>
     </BrowserRouter>
   );

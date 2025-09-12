@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import RecipeCard from "./RecipeCard";
-import { Link } from "react-router";
 
 export default function Recipes() {
   const [allRecipes, setAllRecipes] = useState([]);

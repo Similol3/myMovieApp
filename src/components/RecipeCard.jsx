@@ -4,7 +4,7 @@ export default function RecipeCard({ data }) {
   console.log(data);
 
   return (
-    <div className="w-[90%] mx-auto rounded-xl overflow-hidden shadow-xl">
+    <div className="w-[90%] mx-auto rounded-xl overflow-hidden shadow-xl ">
       <div className="w-full h-[300px] ">
         <img
           src={data.image}
@@ -20,11 +20,11 @@ export default function RecipeCard({ data }) {
         <span >Review: </span>
         <span className="font-extralight">{data.reviewCount}</span>
         <div>
-        <span className="border w-fit px-2 py-0.5 bg-red-400 text-white rounded mx-[85%]">
+        <span className="border w-fit px-2 py-0.5 bg-red-400 text-white rounded mx-[85%] inline-block mt-[0]">
           {data.rating}
         </span>
         </div>
-        <Link to={`/${data.id}`} className="cursor-pointer">Read More</Link>
+        <Link to={`/${data.id}`}>Read More</Link>
       </div>
       </div>
     </div>

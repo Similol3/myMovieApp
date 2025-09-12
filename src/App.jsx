@@ -1,4 +1,3 @@
-import Header from "./components/Header";
 import Searchbar from "./components/Search";
 import Recipes from "./components/Recipes";
 import { BrowserRouter, Route, Routes } from "react-router";
@@ -18,7 +17,7 @@ function App() {
             </div>
           }
         />
-        <Route path="/:id" element={<RecipeDetails/>}/>
+        <Route path="/:id" element={<RecipeDetails/>} />
       </Routes>
     </BrowserRouter>
   );

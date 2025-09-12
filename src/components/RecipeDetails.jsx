@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 
 export default function RecipeDetails() {
   const [recipe, setRecipe] = useState({});
@@ -14,9 +14,9 @@ export default function RecipeDetails() {
     getSingleRecipes();
   }, []);
   return (
-    <div className="w-[100%] mx-auto rounded-xl overflow-hidden shadow-xl">
+    <div className="">
       <div className="w-full h-[300px]">
-        <img src={recipe.image} alt=""  className="object-cover object-center w-full h-full "/>
+        <img src={recipe.image} alt="" className="object-cover object-center w-full h-full"/>
       </div>
       <div>
         <h1>{recipe.name}</h1>
@@ -25,6 +25,7 @@ export default function RecipeDetails() {
         <span>{recipe.instructions}</span>
       </div>
       <div><p>{recipe.ingredients}</p></div>
+      <Link to="/" className="border w-fit px-2 py-0.5 bg-red-400 text-white rounded mx-[75%] inline-block m">GoBack</Link>
     </div>
   );
 }

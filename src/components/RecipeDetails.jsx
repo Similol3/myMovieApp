@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 
 export default function RecipeDetails() {
   const [recipe, setRecipe] = useState({});
   const { id } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function getSingleRecipes() {
@@ -47,12 +48,12 @@ export default function RecipeDetails() {
         </p>
       </div>
       <div className="mt-8">
-        <Link
-          to="/"
+        <button
+          onClick={() => navigate(-1)}
           className="inline-block px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition"
         >
           ← Go Back
-        </Link>
+        </button>
       </div>
     </div>
   );

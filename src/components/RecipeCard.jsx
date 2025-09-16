@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 
 export default function RecipeCard({ data }) {
-  console.log(data);
+  // console.log(data);
 
   return (
     <div className="w-[90%] mx-auto rounded-xl overflow-hidden shadow-xl ">

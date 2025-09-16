@@ -9,7 +9,7 @@ export default function RecipeDetails() {
     async function getSingleRecipes() {
       let res = await fetch(`https://dummyjson.com/recipes/${id}`);
       let data = await res.json();
-      console.log(data);
+      // console.log(data);
       setRecipe(data);
     }
     getSingleRecipes();
